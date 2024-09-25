@@ -1,0 +1,88 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    background-color: yellow;
+font-family: Arial, Helvetica, sans-serif;
+flex-direction: column;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 500px;
+}
+
+.accordion {
+    background-color: white;
+    border-radius: 8px;
+    padding: 17px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px black;
+   font-size: 50px; 
+}
+
+
+.accordion-header {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.accordion-header span {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+
+.accordion-body {
+    color: #444;
+    font-size: 14px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity .3s;
+        
+}
+
+.accordion-body.active {
+    height: 100%;
+    opacity: 1;
+    padding: 5px 0px;
+    
+}
+
+
+.arrow {
+    transition: transform .2s linear;
+}
+
+.accordion:has(.active) .arrow {
+    transform: rotate(180deg);
+    
+}
+
+h1 {
+    display: flex;
+    background-color: white;
+font-size: 30px;
+margin-bottom: 100px;
+font-size: 40px;
+color: black;
+padding: 20px;
+}
+
+ span {
+    color: black;
+}
