@@ -86,3 +86,35 @@ padding: 20px;
  span {
     color: black;
 }
+
+@media screen and (max-width: 500px) {
+    body {
+        background-color: yellow;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 30px; 
+    }
+
+    #container {
+        width: 100%; 
+        padding: 10px; 
+    }
+
+    .accordion {
+        font-size: 16px; 
+        padding: 12px; 
+
+    .accordion-header {
+        font-size: 12px; 
+    }
+
+    .accordion-body {
+        font-size: 10px; 
+    }
+
+    .arrow {
+        font-size: 16px; 
+    }
+}
